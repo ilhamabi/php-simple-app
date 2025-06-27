@@ -10,9 +10,6 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'apt-get update && apt-get install -y unzip git php-xml php-curl php-mbstring'
-                sh 'curl -sS https://getcomposer.org/installer | php'
-                sh 'mv composer.phar /usr/local/bin/composer'
                 sh 'composer install'
             }
         }
