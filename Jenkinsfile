@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/username/php-simple-app.git'
+                git 'https://github.com/ilhamabi/php-simple-app.git'
             }
         }
 
